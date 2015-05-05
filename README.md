@@ -1,6 +1,6 @@
 # scorm
 名称：IT学习网（基于SCORM标准的资源学习平台）<br/>
-项目演示地址：<a href="http://v.youku.com/v_show/id_XNzg5MjUzOTc2.html">http://v.youku.com/v_show/id_XNzg5MjUzOTc2.html</a><br/>
+项目演示地址：<a href="http://v.youku.com/v_show/id_XNzg5MjUzOTc2.html" target="_black">http://v.youku.com/v_show/id_XNzg5MjUzOTc2.html</a><br/>
 产品功能:<br/>                                                      
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本次开发的平台是一个包含网上教学和教学辅导、网上自学、网上师生交流、网上测试、个性化推荐学习以及质量评估等多种服务在内的综合教学服务支持系统。将系统用户分为学员、教师、管理员三类，学员通过平台可进行课程学习、课程推荐（热门课程，最新课程，待参加考试课程，个性化推荐课程）、随时记录、个性化学习、师生互动、参加考试、管理学习档案、资讯公告、在线讨论等，教师在学员功能的基础上还可上传SCORM标准课件、统计课程学习情况、学习互动、课件管理等，管理员则可进行用户管理、课程管理、统计评估、课件管理，课程信息导出等。<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
