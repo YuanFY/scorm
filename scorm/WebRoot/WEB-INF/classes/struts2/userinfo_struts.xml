@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="userinfo" namespace="/" extends="json-default">
+		<action name="login" class="com.scorm.action.UserinfoAction" method="loginValidate">
+			<result name="success">/login/index.jsp</result>
+			<result name="fail">/login/index.jsp</result>
+		</action>
+		<action name="userinfoAction_*" class="com.scorm.action.UserinfoAction" method="{1}">
+			<result type="json" name="success">
+				<param name="root">result</param>
+			</result>
+			<result name="index">
+				/login/index.jsp
+			</result>
+		</action>
+		
+		<action name="userinfoList" class="com.scorm.action.admin.UserInfoAction">
+			<result name="success">/admin/userinfoList.jsp</result>
+		</action>
+		
+		<action name="getUserInfo" class="com.scorm.action.admin.UserInfoAction" method="getUserInfoAction">
+			<result name="success">/admin/userInfoEdit.jsp</result>
+		</action>
+		
+		<action name="updateUserInfo" class="com.scorm.action.admin.UserInfoAction" method="updateUserInfoAction">
+			<result name="success" type="chain">getUserInfo</result>
+		</action>
+		
+		<action name="uc_*" class="com.scorm.action.UsercourseinfoAction" method="{1}">
+			 
+		</action>
+		<!-- 
+			课程信息导出
+		 -->
+		 <action name="export_*" class="com.scorm.action.admin.ExportUserAction" method="{1}">
+		 	<result name="success">/admin/courseInfoList.jsp</result>
+		 </action>
+	</package>
+</struts>    

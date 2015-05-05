@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 配置文件改了以后不用重新启动 -->
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.objectFactory" value="spring"/>
+	<include file="struts2/userinfo_struts.xml"></include>
+	<include file="struts2/admininfo_struts.xml"></include>
+	<include file="struts2/adminuserlist_struts.xml"></include>
+	<include file="struts2/classstatistic_struts.xml"></include>
+	<include file="struts2/classview_struts.xml"></include>
+	<include file="struts2/classstudy_struts.xml"></include>
+	<include file="struts2/scostatistic_struts.xml"></include>
+	<include file="struts2/courseTypeList_struts.xml"></include>
+	<include file="struts2/courseinfoList_struts.xml"></include>
+	<include file="struts2/scoinfo_struts.xml"></include>
+	<include file="struts2/noticeinfo_struts.xml"></include>
+	<include file="struts2/studyrecord_struts.xml"></include>
+	<include file="struts2/studycourse_struts.xml"></include>
+	<include file="struts2/user/courseinfo_struts.xml"></include>
+	<include file="struts2/user/mycenter_struts.xml"></include>
+	<include file="struts2/user/onlinecourse_struts.xml"></include>
+	<include file="struts2/user/noticeinfo_struts.xml"></include>
+	<include file="struts2/noticeinfo_struts.xml"></include>
+	
+	<include file="struts2/user/discussAndNote_struts.xml"></include>
+</struts>    

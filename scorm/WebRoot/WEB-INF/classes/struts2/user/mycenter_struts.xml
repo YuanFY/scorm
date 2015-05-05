@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="myCenter" namespace="/" extends="json-default">
+		<action name="myCenterUserinfo" class="com.scorm.action.user.MyCenterAction">
+			<result name="success">/user/myCenter.jsp</result>
+		</action>
+		
+		<action name="updateMyUserinfo" class="com.scorm.action.user.MyCenterAction" method="updateMyUserinfoAction">
+			<result name="success" type="chain">myCenterUserinfo</result>
+		</action>
+		
+		<action name="myCenterPwdUpdate" class="com.scorm.action.user.MyCenterAction" method="myCenterPwdUpdateAction">
+			<result name="success">/user/myCenterPwdUpdate.jsp</result>
+		</action>
+		
+		<action name="updateCenterUserPwd" class="com.scorm.action.user.MyCenterAction" method="updateMyUserPwdAction">
+			<result name="success" type="chain">myCenterPwdUpdate</result>
+		</action>
+		
+		<action name="myCenterScoUpload" class="com.scorm.action.user.MyCenterAction" method="myCenterScoUploadAction">
+			<result name="success">/user/myCenterScoUpload.jsp</result>
+		</action>
+		<action name="myCenterSco" class="com.scorm.action.user.MyCenterAction" method="myCenterSco">
+			<result name="success">/user/myCenterSco.jsp</result>
+		</action>
+		<action name="delSco" class="com.scorm.action.user.MyCenterAction" method="delSco">
+			<result name="success" >
+				/user/myCenterSco.jsp
+			</result>
+		</action>
+	</package>
+</struts>    

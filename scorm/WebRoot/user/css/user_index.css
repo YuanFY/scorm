@@ -1,0 +1,507 @@
+/* CSS Document */
+
+body {
+	width: 1170px ;
+	margin: 0px auto ;
+	font-family: "寰蒋闆呴粦" ;
+}
+
+a {
+	text-decoration: none ;
+	color: #000 ;
+}
+
+/*-----------------------header椤堕儴----------------------*/
+
+header {
+	background: url(../img/user_index_top_background.jpg) repeat ;
+	width: 100% ;
+	height: 50px ;
+	position: absolute ;
+	top: 0px ;
+	left: 0px ;
+	z-index: 1 ;
+}
+
+header #top_logo {
+	width: 110px ;
+	height: 50px ;
+	margin-left: 90px ;
+	float: left ;
+}
+
+header div{
+	cursor: pointer ;
+}
+
+header #nav {
+	list-style: none ;	
+	color: #fff ;
+	line-height: 50px ;
+	font-size: 14px ;
+}
+
+header #nav div {
+	float: left ;
+	padding: 0px 20px ;
+}
+
+header #nav div.active {
+	background: url(../img/user_index_top_move.jpg) repeat ;
+}
+
+.clear_float {
+	clear: both ;
+}
+
+header #menu div{
+	font-size: 14px ;
+	background: #FFF ;
+	display: none ;
+}
+
+header #menu1 {
+	padding: 10px 20px ;
+	border: 1px #ccc solid ;
+	border-radius: 5px ;
+	width: 135px ;
+	position: absolute ;
+	left: 268px ;
+}
+
+header #menu2 {
+	padding: 10px 20px ;
+	border: 1px #ccc solid ;
+	border-radius: 5px ;
+	width: 180px ;
+	position: absolute ;
+	left: 335px ;
+}
+
+header #menu3 {
+	padding: 10px 20px ;
+	border: 1px #ccc solid ;
+	border-radius: 5px ;
+	width: 120px ;
+	position: absolute ;
+	left: 400px ;
+}
+
+header #menu4 {
+	padding: 10px 20px ;
+	border: 1px #ccc solid ;
+	border-radius: 5px ;
+	width: 120px ;
+	position: absolute ;
+	left: 472px ;
+}
+
+header #menu5 {
+	padding: 10px 20px ;
+	border: 1px #ccc solid ;
+	border-radius: 5px ;
+	width: 150px ;
+	position: absolute ;
+	left: 540px ;
+}
+
+header #menu6 {
+	padding: 10px 20px ;
+	border: 1px #ccc solid ;
+	border-radius: 5px ;
+	width: 130px ;
+	position: absolute ;
+	left: 605px ;
+}
+
+header #menu7 {
+	padding: 10px 20px ;
+	border: 1px #ccc solid ;
+	border-radius: 5px ;
+	width: 130px ;
+	position: absolute ;
+	left: 675px ;
+}
+
+header #menu8 {
+	padding: 10px 20px ;
+	border: 1px #ccc solid ;
+	border-radius: 5px ;
+	width: 60px ;
+	position: absolute ;
+	left: 745px ;
+}
+
+header #menu9 {
+	padding: 10px 20px ;
+	border: 1px #ccc solid ;
+	border-radius: 5px ;
+	width: 100px ;
+	position: absolute ;
+	left: 815px ;
+}
+
+header hr {
+	margin: 10px 0px ;
+}
+
+header #menu .menu_active {
+	display: block ;
+}
+
+/*-----------------------left涓棿宸﹂儴----------------------*/
+
+.left {
+	margin-top: 75px ;
+	width: 870px ;
+	float: left ;
+}
+
+.left a {
+	text-decoration: none ;
+	color: #000 ;	
+}
+
+.left #nav1 {
+	height: 40px ;
+	border-bottom: #09C 2px solid ;
+}
+
+.left .nav_selected {
+	background: url(../img/nav_selected.jpg) no-repeat ;
+}
+
+.left .nav_moved {
+	background: url(../img/nav_moved.jpg) no-repeat ;
+}
+
+.left .nav_selected a {
+	color: #FFF ;
+}
+
+.left .nav_moved a {
+	color: #09C ;
+}
+
+.left #nav1 div {
+	line-height: 40px ;
+	padding: 0px 15px ;
+	font-size: 14px ;
+	float: left ;
+	cursor: pointer ;
+	text-align: center ;
+}
+
+.left #nav1_content {
+	margin-top: 15px ;
+}
+
+/* ---------------------闅愯棌鏈夐棶棰�------------------- */
+.display_block {
+	display: block ;
+}
+
+.display_none {
+	display: none ;
+}
+
+.left .course {
+	/*width: 290px ;*/
+	height: 158px ;
+	float: left ;
+	margin-top: 15px ;
+}
+
+.left #nav1_content1_course a {
+	font-weight: 700 ;
+}
+
+.left p {
+	margin: 5px 0px ;
+}
+
+.left #nav1_content1_course {
+	font-size: 13px ;
+	color: #999 ;
+}
+
+/*---------------------------鍏充簬灞曠ず浠嬬粛鐨勭粷瀵瑰畾浣�------------------*/
+
+.left .content_course1_content {
+	margin-top: -5px ;
+	width: 160px ;
+	font-size: 14px ;
+	/*position: absolute ;
+	top: 125px ;
+	left: 240px ;*/
+}
+
+/*
+.left .content_course2_content {
+	width: 160px ;
+	position: absolute ;
+	top: 125px ;
+	left: 530px ;
+}
+
+.left .content_course3_content {
+	width: 160px ;
+	position: absolute ;
+	top: 125px ;
+	left: 820px ;
+}
+
+.left .content_course4_content {
+	width: 160px ;
+	position: absolute ;
+	top: 300px ;
+	left: 240px ;
+}
+
+.left .content_course5_content {
+	width: 160px ;
+	position: absolute ;
+	top: 300px ;
+	left: 530px ;
+}
+
+.left .content_course6_content {
+	width: 160px ;
+	position: absolute ;
+	top: 300px ;
+	left: 820px ;
+}*/
+
+/*-----------------------left nav2--------------------------*/
+
+.left #nav2 {
+	height: 40px ;
+	border-bottom: #09C 2px solid ;
+}
+
+.left #nav2 div {
+	line-height: 40px ;
+	padding: 0px 15px ;
+	font-size: 14px ;
+	float: left ;
+	cursor: pointer ;
+	text-align: center ;
+}
+
+.left #nav2 .nav_selected {
+	background: url(../img/nav2_selected.jpg) no-repeat;
+	color: #FFF ;
+}
+
+.left #nav2 .nav_moved {
+	background: url(../img/nav2_moved.jpg) no-repeat;
+}
+
+.left #nav2_content1, #nav2_content2, #nav2_content3, #nav2_content4 {
+	margin-top: 5px ;
+	height: 230px ;
+}
+
+.left #nav2_content1 div, #nav2_content2 div, #nav2_content3 div, #nav2_content4 div {
+	padding: 5px 0px ;
+	font-size: 14px ;
+	padding-left: 10px ;
+	border-bottom: 1px #CCC solid ;
+	border-radius: 5px ;
+}
+
+.left #nav2_content1 div span, #nav2_content2 div span, #nav2_content3 div span, #nav2_content4 div span {
+	float: right ;
+	padding-right: 50px ;
+}
+
+/*-----------------------left nav3-------------------------*/
+.left #nav3 {
+	height: 40px ;
+	border-bottom: #09C 2px solid ;
+}
+
+.left #nav3 div {
+	line-height: 40px ;
+	padding: 0px 15px ;
+	font-size: 14px ;
+	float: left ;
+	cursor: pointer ;
+	text-align: center ;
+}
+
+.left #nav3 .nav_selected {
+	background: url(../img/nav2_selected.jpg) no-repeat;
+	color: #FFF ;
+}
+
+.left #nav3 .nav_moved {
+	background: url(../img/nav2_moved.jpg) no-repeat;
+}
+
+.left #nav3_content div {
+	margin-right: 10px ;
+	margin-top: 10px ;
+}
+
+.left #nav3_content1, #nav3_content2, #nav3_content3 {
+	padding-left: 30px ;
+}
+
+.left #nav3_content1 div, #nav3_content2 div, #nav3_content3 div{
+	border: 1px #CCC solid ;
+	border-radius: 5px ;
+	height: 190px ;
+	width: 150px ;
+	padding-top: 2px ;
+	padding-left: 2px ;
+	float: left ;
+}
+
+.left #nav3_content1 p, #nav3_content2 p, #nav3_content3 p {
+	padding-left: 5px ;
+	margin: 8px 0px ;
+	font-size: 14px ;
+	color: #666 ;
+}
+
+/*-----------------------right涓棿鍙抽儴----------------------*/
+
+.right {
+	margin-top: 75px ;
+	width: 270px ;
+	height: 200px ;
+	float: right ;
+}
+
+.right .user_info {
+	border-radius: 5px ;
+	border: 1px #06C solid ;
+	height: 205px ;
+}
+
+.right .user_info_top {
+	background: url(../img/user_top_background.jpg) repeat ;
+	height: 35px ;
+	color: #FFF ;
+	font-size: 14px ;
+	line-height: 35px ;
+	padding-left: 10px ;
+}
+
+.right .user_info_bottom {
+	height: 170px ;
+	font-size: 14px ;
+	padding-left: 10px ;
+	padding-top: 5px ;
+	color: #666 ;
+}
+
+.right .user_info_bottom p {
+	margin: 5px 0px ;
+}
+
+.right .user_img {
+	margin-top: -60px ;
+	margin-left: 10px ;
+}
+
+.right .user_study {
+	background: url(../img/user_study.jpg) repeat ;
+	width: 140px ;
+	height: 35px ;
+	line-height: 35px ;
+	border-radius: 5px ;
+	font-size: 14px ;
+	cursor: pointer ;
+	border: 1px solid #FFF ;
+	margin-top: -60px ;
+	margin-left: 5px ;
+}
+
+.right .user_study span {
+	margin-left: 20px ;
+}
+
+.right .user_study .num {
+	font-weight: bold ;
+	color: red ;
+	margin-left: 0px ;
+}
+
+.right .user_study_content {
+	font-size: 14px ;
+	color: #666 ;
+	height: 60px ;
+	width: 115px;
+	border: 1px #666 solid ;
+	border-radius: 5px ;
+	text-align: center ;
+	position: absolute ;
+	top: 275px ;
+	right: 235px ;
+	background: #FFF ;
+	z-index: 1 ;
+}
+
+.right .user_study_content p {
+	margin: 5px 0px ;
+}
+
+.right .user_study_content a:hover {
+	color: #09c ;
+}
+
+.right .user_study_content .num {
+	font-weight: bold ;
+	color: red ;
+}
+
+.right .credit_list {
+	margin-top: 20px ;
+	border-radius: 5px ;
+	border: 1px #06C solid ;
+	height: 300px ;
+}
+
+.right .credit_list_top {
+	background: url(../img/user_top_background.jpg) repeat ;
+	height: 35px ;
+	color: #FFF ;
+	font-size: 14px ;
+	line-height: 35px ;
+	padding-left: 10px ;
+}
+
+.right .credir_list_ul{
+	padding-top: 5px ;
+	padding-left: 40px ;
+	list-style: url(../img/credit_list.jpg) ;
+	color: #666 ;
+}
+
+.right .credir_list_ul li {
+	margin-bottom: 2px ;
+}
+
+
+
+/*-----------------------搴曢儴-------------------------------*/
+
+footer {
+	margin-top: 50px ;
+	padding-top: 30px ;
+	height: 130px ;
+	border-top: 1px #e5e5e5 solid ;
+	background: #f5f5f5 ;
+	width: 100%;
+	position: absolute ;
+	left: 0px ;
+	text-align: center ;
+	font-size: 14px ;
+	color: #777 ;
+}
+
+a:hover {
+	color: #09c ;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="discuss" namespace="/" extends="json-default">
+		 <action name="discuss_*" class="com.scorm.action.user.DiscussinfoAction" method="{1}">
+		 	<result type="json" name="success">
+				<param name="root">result</param>
+			</result>
+		 </action>
+		 <action name="note_*" class="com.scorm.action.user.NoteinfoAction" method="{1}">
+		 	<result type="json" name="success">
+				<param name="root">result</param>
+			</result>
+		 </action>
+	</package>
+</struts>    

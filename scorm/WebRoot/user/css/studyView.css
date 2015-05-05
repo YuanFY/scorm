@@ -1,0 +1,491 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	overflow-x:hidden ;
+	font-family: "Microsoft YaHei";
+}
+
+a {
+	text-decoration: none ;
+}
+
+header {
+	position: absolute ;
+	left: 0px;
+	top: 0px;
+	height: 55px;
+	line-height: 55px ;
+	background: #3579a6 ;
+	width: 1366px;
+	color: #fff ;
+	
+}
+
+.back {
+	float: left;
+	margin-left: 15px ;
+	margin-right: 15px ;
+}
+
+.back a {
+	font-size: 14px;
+	color: #fff ;
+	text-decoration: none ;
+}
+
+.view {
+	position: absolute ;
+	top: 55px ;
+	left: 0px ;
+	width: 1666px ;
+}
+
+.view_left {
+	position: relative ;
+	width: 250px ;
+	height: 540px ;
+	background: #f5f5f5 ;
+	border-right: 1px solid #e5e5e5 ;
+	float: left ;
+}
+
+.view_left .menu {
+	height: 45px ;
+	line-height: 45px ;
+	text-align: center ;
+	background: -webkit-linear-gradient(top, #fbfbfb 0, #f0f0f0 100%);
+	background: -o-linear-gradient(top, #fbfbfb 0, #f0f0f0 100%);
+	background: -ms-linear-gradient(top, #fbfbfb 0, #f0f0f0 100%);
+	border-bottom: 1px solid #e5e5e5 ;
+}
+
+.view_left ul {
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+.view_left ul li {
+	list-style: none ;
+}
+
+.view_left ul li a {
+	color: #515151 ;
+}
+
+.view_left ul li a:hover {
+	color: #27b3ef ;
+}
+
+.view_right .full_view {
+	position: relative ;
+	top: -40px;
+	left: 20px;
+	width: 80px;
+}
+
+.view_right .full_view a {
+	color: #fff ;
+	background: #3579a6 ;
+	padding: 5px;
+	font-size: 14px; 
+	border-radius: 5px;
+}
+
+.view_right .full_view a:hover {
+	background: #2C618D ;
+}
+
+.view_left .current a {
+	color: #27b3ef ;
+}
+
+.view_right {
+	position: relative ;
+	width: 1115px ;
+	height: 540px ;
+	background: #282830 ;
+	float: left ;
+}
+
+.content {
+	position: relative ;
+	left: 80px ;
+	top: 599px;
+	width: 1366px ;
+	height: 600px ;
+	background: #fff ;
+}
+
+.content .content_left {
+	position: relative ;
+	width: 800px ;
+	border-right: 1px solid #d8d8d8 ;
+	float: left ;
+	margin-top: 20px;
+}
+
+.content .content_left .content_top {list-style:none; padding:0px; margin:0px; text-align: center ; border-bottom: 1px solid #ccc ;
+	height: 52px; width: 600px; margin-left: 50px;}
+
+.content .content_left .content_top li { 
+	margin-right: 50px; 
+	float: left; 
+	width: 100px; 
+	height: 50px;
+	line-height: 50px;
+	font-size: 17px;
+	cursor: pointer ;
+}
+
+.content .content_left .content_top li a {
+	color: #515151 ;
+}
+
+.content .content_left .content_top .current {
+	border-bottom: 3px solid rgb(201, 57, 74)  ;
+}
+
+.editor {
+	margin-top: 20px;
+}
+
+.submit {
+	position: relative ;
+	text-align: right ;
+	margin-top: 20px;
+}
+
+.submit a {
+	margin-right: 50px;
+	padding: 5px 10px;
+	width: 100px ;
+	height: 20px; 
+	line-height: 20px;
+	background:rgb(51, 166, 70) ;
+	font-size: 14px ;
+	color: #fff ;
+	border-radius: 5px;
+}
+
+.comment { margin-left: 50px ;}
+
+.comment .top {
+	padding: 10px ;
+	margin-top: 20px ;
+	border-radius: 5px ;
+	width: 680px ;
+	height: 20px ;
+	font-size: 16px;
+	line-height: 20px;
+	background: #f2f2f2 ;
+}
+
+.ques-list {
+padding: 10px 0 10px 0;
+}
+
+.answerlist {
+padding: 16px 0px 12px;
+margin-right: 50px;
+border-bottom: 1px solid #eee;
+clear: both;
+overflow: hidden;
+position: relative;
+}
+
+.queHead {
+display: block;
+width: 40px;
+height: 40px;
+border-radius: 20px;
+overflow: hidden;
+margin-right: 20px;
+margin-left: 10px;
+}
+
+.l {
+float: left;
+}
+
+.queslist {
+width: 600px;
+}
+
+.queslist span a {
+color: #b4bbbf;
+font-size: 12px;
+}
+
+.queslist p {
+margin: 6px 0 0;
+word-break: break-all;
+word-wrap: break-word;
+}
+
+.finaltime {
+color: #b4bbbf;
+font-size: 12px;
+margin-top: 20px;
+line-height: 22px;
+position: relative;
+}
+
+.finaltime .replyDetail {
+position: absolute;
+right: 0;
+bottom: 0;
+}
+
+.finaltime .replaynum {
+background: url(../img/qalisticon.png) no-repeat 0 -47px;
+display: inline-block;
+vertical-align: middle;
+width: 16px;
+height: 15px;
+padding-left: 5px;
+}
+
+.replyDetail {
+	color: #515151 ;
+}
+
+.pagination {
+	margin-top: 10px;
+}
+
+.pagination ul {
+display: inline-block;
+margin-left: 0;
+margin-bottom: 0;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.pagination ul>li {
+display: inline;
+}
+
+.pagination ul>li:first-child>a, .pagination ul>li:first-child>span {
+border-left-width: 1px;
+-webkit-border-top-left-radius: 4px;
+-moz-border-radius-topleft: 4px;
+border-top-left-radius: 4px;
+-webkit-border-bottom-left-radius: 4px;
+-moz-border-radius-bottomleft: 4px;
+border-bottom-left-radius: 4px;
+}
+
+.pagination ul>.active>a, .pagination ul>.active>span {
+color: #999999;
+cursor: default;
+}
+
+.pagination ul>li>a:hover, .pagination ul>.active>a, .pagination ul>.active>span {
+background-color: #f5f5f5;
+}
+
+.pagination ul>li>a, .pagination ul>li>span {
+float: left;
+padding: 4px 12px;
+line-height: 20px;
+text-decoration: none;
+background-color: #ffffff;
+border: 1px solid #dddddd;
+border-left-width: 0;
+}
+
+.pagination ul li a{
+	font-size: 14px;
+}
+
+.pagination ul li a:visited {
+	color: #515151 ;
+}
+
+.note {
+	margin-left: 50px;
+}
+
+.otherNote {
+	margin-left: 50px;
+}
+/*	--------------------------------------------------------------------------	
+	笔记
+	--------------------------------------------------------------------------		*/
+	
+#course_note li {
+border-bottom: 1px solid #eee;
+overflow: hidden;
+padding: 10px 0 25px 0;
+margin-right: 50px;
+}
+
+#course_note .notelist_headpic {
+float: left;
+width: 40px;
+margin-right: 10px;
+margin-top: 6px;
+}
+
+.notelist_content {
+margin-left: 60px;
+}
+
+.notelist_content .u_name, .notelist_content .u_name a {
+font-size: 12px;
+color: #b4bbbf;
+}
+
+.notelist_content p {
+font-size: 14px;
+line-height: 1.6;
+color: #5e5e5e;
+word-break: break-all;
+margin-top: 6px;
+}
+
+.notelist-bottom {
+color: #bac2c5;
+font-size: 12px;
+margin-top: 15px;
+}
+
+.l {
+float: left;
+}
+
+.notelist-actions {
+float: right;
+}
+
+a.list-praise:link, a.list-praise:visited {
+border-left: 1px solid #e3e5e5;
+padding: 0 16px;
+color: #b5bdc0;
+font-size: 14px;
+margin-top: 5px;
+}
+
+.notelist-actions a {
+float: left;
+display: block;
+overflow: hidden;
+cursor: pointer;
+}
+
+
+/*	--------------------------------------------------------------------------	
+	共同战斗的人
+	--------------------------------------------------------------------------		*/
+	
+.content .content_right {
+	position: relative ;
+	float: left ;
+	width: 200px ;
+	left: 100px;
+	margin-top: 20px;
+}
+	
+.sidebar {
+float: right;
+width: 280px;
+margin-top: 15px;
+}
+
+.study_share {
+border-bottom: 1px solid rgb(208, 214, 217);
+padding: 13px 0px;
+height: 28px;
+width: 244px;
+margin: 0px auto;
+}
+
+.sidebar dl {
+clear: both;
+padding: 5px 18px;
+}
+
+.sidebar dl dt {
+	margin-top: -20px;
+	border-bottom: 1px solid rgb(221, 221, 221);
+	color: rgb(105, 105, 105);
+	font-size: 14px;
+	height: 30px;
+	padding-bottom: 3px;
+	padding-top: 18px;
+}
+
+.sidebar .changeUser {
+	float: right;
+	font-family: 宋体;
+	font-size: 12px;
+	font-weight: normal;
+	width: 20px;
+	height: 30px;
+	text-indent: -9999px;
+	background: url(../img/study_chapter.png) 0px -185px no-repeat;
+}
+
+.sidebar dl dd {
+	color: rgb(169, 175, 179);
+	font-size: 14px;
+	line-height: 1.6;
+	margin:0px ;
+	padding: 0px;
+}
+
+.sidebar ul li {
+height: 54px;
+margin: 12px 0px;
+}
+
+.sidebar ul li a {
+color: rgb(86, 86, 86);
+}
+
+.sidebar ul li img {
+float: left;
+width: 40px;
+height: 40px;
+border-radius: 40px;
+}
+
+.sidebar ul li h3 {
+margin-left: 50px;
+display: block;
+white-space: nowrap;
+font-size: 14px;
+overflow: hidden;
+line-height: 1.4;
+}
+
+.sidebar ul li em {
+margin-left: 50px;
+display: block;
+white-space: nowrap;
+overflow: hidden;
+font-size: 12px;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {
+font-style: normal;
+font-weight: normal;
+}
+
+.clear {
+height: 0;
+overflow: hidden;
+clear: both;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, input, button, textarea, p, blockquote, th, td, form {
+margin: 0;
+padding: 0;
+}

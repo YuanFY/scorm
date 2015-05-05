@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="admin" namespace="/" extends="struts-default">
+		<action name="userList" class="com.scorm.action.admin.UserlistAction">
+			<result name="success">/admin/userList.jsp</result>
+		</action>
+		<action name="deleteUser" class="com.scorm.action.admin.UserlistAction" method="deleteUser">
+			<result name="success" type="redirectAction">userList</result>
+		</action>
+		<action name="detailUser" class="com.scorm.action.admin.UserlistAction" method="detailUser">
+			<result name="success">/admin/userDetail.jsp</result>
+		</action>
+		<action name="changeUser" class="com.scorm.action.admin.UserlistAction" method="changeUser">
+			<result name="success">/admin/userDetail.jsp</result>
+		</action>
+		<action name="teacherList" class="com.scorm.action.admin.TeacherlistAction">
+			<result name="success">/admin/teacherList.jsp</result>
+		</action>
+		<action name="deleteTeacher" class="com.scorm.action.admin.TeacherlistAction" method="deleteUser">
+			<result name="success" type="redirectAction">teacherList</result>
+		</action>
+		<action name="detailTeacher" class="com.scorm.action.admin.TeacherlistAction" method="detailUser">
+			<result name="success">/admin/teacherDetail.jsp</result>
+		</action>
+		<action name="changeTeacher" class="com.scorm.action.admin.TeacherlistAction" method="changeUser">
+			<result name="success">/admin/teacherDetail.jsp</result>
+		</action>
+		<action name="adminList" class="com.scorm.action.admin.AdminlistAction">
+			<result name="success">/admin/adminList.jsp</result>
+		</action>
+		<action name="deleteAdmin" class="com.scorm.action.admin.AdminlistAction" method="deleteUser">
+			<result name="success" type="redirectAction">adminList</result>
+		</action>
+		<action name="detailAdmin" class="com.scorm.action.admin.AdminlistAction" method="detailUser">
+			<result name="success">/admin/adminDetail.jsp</result>
+		</action>
+		<action name="changeAdmin" class="com.scorm.action.admin.AdminlistAction" method="changeUser">
+			<result name="success">/admin/adminDetail.jsp</result>
+		</action>
+		<action name="login1" class="com.scorm.action.admin.UserlistAction">
+			<result name="success">/admin/userList.jsp</result>
+		</action>
+	</package>
+</struts>    

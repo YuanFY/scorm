@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="courseType" namespace="/" extends="json-default">
+		<action name="courseTypeList" class="com.scorm.action.admin.CourseTypeAction">
+			<result name="success">/admin/courseTypeList.jsp</result>
+		</action>
+		
+		<action name="courseType" class="com.scorm.action.admin.CourseTypeAction" method="getCourseTypeAction">
+			<result name="success">/admin/courseTypeEdit.jsp</result>
+		</action>
+		
+		<action name="updateCourseType" class="com.scorm.action.admin.CourseTypeAction" method="updateCourseTypeAction">
+			<result name="success" type="chain">courseType</result>
+		</action>
+		
+		<action name="addCourseType" class="com.scorm.action.admin.CourseTypeAction" method="addCourseTypeAction">
+			<result name="success" type="chain">courseTypeList</result>
+		</action>
+		<action name="import" class="com.scorm.action.admin.ExportUserAction" method="importCourseType">
+			<result name="success" type="chain">courseTypeList</result>
+		</action>
+	</package>
+</struts>    

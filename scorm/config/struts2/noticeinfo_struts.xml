@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="notice" namespace="/" extends="json-default">
+		<action name="noticeinfo" class="com.scorm.action.admin.NoticeInfoAction">
+			<result name="success">/admin/noticeinfoList.jsp</result>
+		</action>
+		
+		<action name="getNoticeinfo" class="com.scorm.action.admin.NoticeInfoAction" method="getNoticeInfoAction">
+			<result name="success">/admin/noticeinfoEdit.jsp</result>
+		</action>
+		
+		<action name="delNoticeinfo" class="com.scorm.action.admin.NoticeInfoAction" method="delNoticeInfoAction">
+			<result name="success" type="chain">noticeinfo</result>
+		</action>
+		
+		<action name="updateNoticeinfo" class="com.scorm.action.admin.NoticeInfoAction" method="updateNoticeInfoAction">
+			<result name="success" type="chain">getNoticeinfo</result>
+		</action>
+		
+		<action name="addNotice" class="com.scorm.action.admin.NoticeInfoAction" method="addNoticeAction">
+			<result name="success" type="chain">noticeinfo</result>
+		</action>
+	</package>
+</struts>    

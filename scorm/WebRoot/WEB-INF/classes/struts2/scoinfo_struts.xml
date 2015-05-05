@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="scoinfo" namespace="/" extends="json-default">
+		<action name="scoinfoList" class="com.scorm.action.admin.ScoinfoAction">
+			<result name="success">/admin/scoinfoList.jsp</result>
+		</action>
+		
+		<action name="delScoinfo" class="com.scorm.action.admin.ScoinfoAction" method="delScoAction">
+			<result name="success" type="chain">scoinfoList</result>
+		</action>
+		
+		<action name="getScoinfo" class="com.scorm.action.admin.ScoinfoAction" method="getScoinfoAction">
+			<result name="success">/admin/scoinfoEdit.jsp</result>
+		</action>
+		
+		<action name="updateScoinfo" class="com.scorm.action.admin.ScoinfoAction" method="updateScoinfoAction">
+			<result name="success" type="chain">getScoinfo</result>
+		</action>
+	</package>
+</struts>    

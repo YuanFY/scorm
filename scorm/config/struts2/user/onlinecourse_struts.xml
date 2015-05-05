@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="onlineCourse" namespace="/" extends="json-default">
+		<action name="onlineCourse" class="com.scorm.action.user.OnlineCourseAction">
+			<result name="success">onlineCourse.jsp</result>
+		</action>
+		
+		<action name="courseSearch" class="com.scorm.action.user.OnlineCourseAction" method="courseSearchAction">
+			<result name="success">/user/onlineCourse.jsp</result>
+		</action>
+	</package>
+</struts>    

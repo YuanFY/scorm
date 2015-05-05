@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="admininfo" namespace="/" extends="json-default,struts-default">
+		<action name="admininfoAction_*" class="com.scorm.action.admin.AdmininfoAction" method="{1}">
+			<result type="json" name="success">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="admin_*" class="com.scorm.action.admin.AdmininfoAction" method="{1}">
+			<result name="success">/admin/login.jsp</result>
+			<result name="uploadSuccess">/admin/scoUpload.jsp</result>
+		</action>
+	</package>
+</struts>    

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="courseScoinfo" namespace="/" extends="json-default">
+		<action name="courseScoinfo" class="com.scorm.action.user.CourseScoinfoAction">
+			<result name="success">courseinfo.jsp</result>
+		</action>
+		
+		<action name="getCourseNote" class="com.scorm.action.user.CourseScoinfoAction" method="getCourseNoteAction">
+			<result name="success">courseNote.jsp</result>
+		</action>
+		
+		<action name="getScoNote" class="com.scorm.action.user.CourseScoinfoAction" method="getScoNoteAction">
+			<result name="success">scoNote.jsp</result>
+		</action>
+		
+		<action name="saveScoNote" class="com.scorm.action.user.CourseScoinfoAction" method="saveScoNoteAction">
+			<result name="success">scoNote.jsp</result>
+		</action>
+		<action name="lookCourseinfo" class="com.scorm.action.user.CourseScoinfoAction" method="lookCourseinfo">
+			<result name="success">lookCourseinfo.jsp</result>
+		</action>
+		<action name="userCourse_*" class="com.scorm.action.user.CourseScoinfoAction" method="{1}">
+			<result name="success">courseinfo.jsp</result>
+		</action>
+	</package>
+</struts>    

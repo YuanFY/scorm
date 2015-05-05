@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+.shadow {	
+	/*
+	第一个参数是x轴阴影段长度
+	第二个参数是y轴阴影段长度
+	第三个参数是往四周阴影段长度
+	第四个参数是阴影段颜色
+	*/
+    box-shadow:0px 0px 0px #CCCCCC;
+    -moz-box-shadow:0px 0px 0px #CCCCCC;
+    -webkit-box-shadow:0px 0px 0px #CCCCCC;
+	/*direction 阴影角度 0°为从下往上 顺时针方向 strength 阴影段长度*/
+    -ms-filter:"progid:DXImageTransform.Microsoft.Shadow(color=#E9E9E9, direction=0, strength=6)\
+                progid:DXImageTransform.Microsoft.Shadow(color=#E9E9E9, direction=90, strength=6)\
+                progid:DXImageTransform.Microsoft.Shadow(color=#E9E9E9, direction=180, strength=6)\
+                progid:DXImageTransform.Microsoft.Shadow(color=#E9E9E9, direction=270, strength=6)";
+    *filter:progid:DXImageTransform.Microsoft.Shadow(color=#E9E9E9, direction=0, strength=6)
+            progid:DXImageTransform.Microsoft.Shadow(color=#E9E9E9, direction=90, strength=6)
+            progid:DXImageTransform.Microsoft.Shadow(color=#E9E9E9, direction=180, strength=6)
+            progid:DXImageTransform.Microsoft.Shadow(color=#E9E9E9, direction=270, strength=6);
+}
+
+.box {width:379px; height:190px; background:#e8e8e8; border-radius:5px; -moz-border-radius:25px; border:1px solid #FFF; position:absolute; z-index:2; overflow:hidden; right:100px; top:100px; filter:alpha:(opacity:80); opacity:0.8;}
+.box .box_head { height:38spx; background:#dbdbdb;border-top-left-radius:5px; border-top-right-radius:5px; -moz-border-top-left-radius:5px; -moz-border-top-right-radius:5px; cursor:all-scroll; z-index:2; }
+.box .box_head .closeBtn { position:absolute; top:8px; right:10px; z-index:3; display:none;}
+.box .box_head .closeBtn img {border:0px;}
+.headFont {line-height:38px; text-align:left; font:15px/38px '微软雅黑'; margin-left:15px;}
+.box .content { height:240px; border-bottom-left-radius:5px; border-bottom-right-radius:5px; -moz-border-bottom-left-radius:5px; -moz-border-bottom-right-radius:5px; filter:alpha(opacity:80); opacity:0.8;}
+.content table {display:table; border-collapse:collapse; border-spacing:2px; border-color:#FFF;}
+.content table tbody {width:329px; height:198px;}
+.content table tbody tr { width:329px; height:34px;}
+.content table tbody tr th {margin: 0;padding: 0;font-family: '微软雅黑'; font-size:14px; font-weight:100; width:60px; vertical-align:top}
+.content table tbody tr textarea {margin:0px; padding:0px; width:290px; height:120px; resize:none;}
+.btn {width:80px; height:30px;}

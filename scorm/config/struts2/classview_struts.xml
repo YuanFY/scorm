@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="in" namespace="/" extends="struts-default">
+		<action name="classView" class="com.scorm.action.admin.ClassviewAction">
+			<result name="success">/admin/classView.jsp</result>
+		</action>
+		<action name="scoView" class="com.scorm.action.admin.ClassviewAction" method="findSco">
+			<result name="success">/admin/scoView.jsp</result>
+		</action>
+	</package>
+</struts>    
